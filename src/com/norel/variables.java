@@ -13,6 +13,7 @@ public class variables {
             boolean = stores T or F
 
         Syntax - 'type' 'name' =  value;
+
          */
 
         String name = "Loren"; //stores string "Loren"
