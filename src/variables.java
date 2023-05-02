@@ -1,7 +1,3 @@
-package com.norel;
-
-import java.util.Date;
-
 public class variables {
     public static void main(String[] args) {
         /*
@@ -13,6 +9,7 @@ public class variables {
             boolean = stores T or F
 
         Syntax - 'type' 'name' =  value;
+
          */
 
         String name = "Loren"; //stores string "Loren"
@@ -31,9 +28,5 @@ public class variables {
         double myDouble = 9.99; //double value
         int myInt = (int) myDouble; //converts double into an int type
         System.out.println(myInt);
-
-        //primitive types
-        Date now = new Date(); //gets current date/time/year
-        System.out.println(now); //prints current date
     }
 }
