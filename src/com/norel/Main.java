@@ -27,7 +27,7 @@ public class Main {
 
     /*
     ~ Identifiers ~
-        Names of local variables/instances/class variables/labels but also for classes/packages/modules/methods
+        Names of local com.norel.variables/instances/class com.norel.variables/labels but also for classes/packages/modules/methods
         Case sensitive, Cannot be keywords
 
     ~ Modifiers ~
