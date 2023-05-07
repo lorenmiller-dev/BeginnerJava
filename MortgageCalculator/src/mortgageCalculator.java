@@ -27,7 +27,7 @@ public class mortgageCalculator {
         System.out.println("Your monthly mortgage payment is: $" + mortgagePayment);
     }
 
-    //finalized variables
+    //instance variables
     private static final byte percent  = 100;
     private static final byte months = 12;
 
