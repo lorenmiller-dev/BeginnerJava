@@ -1,7 +1,3 @@
-package com.norel;
-
-import java.util.Date;
-
 public class variables {
     public static void main(String[] args) {
         /*
@@ -32,9 +28,5 @@ public class variables {
         double myDouble = 9.99; //double value
         int myInt = (int) myDouble; //converts double into an int type
         System.out.println(myInt);
-
-        //primitive types
-        Date now = new Date(); //gets current date/time/year
-        System.out.println(now); //prints current date
     }
 }
