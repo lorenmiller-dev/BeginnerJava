@@ -42,6 +42,5 @@ public class learnArray {
         double w = Double.parseDouble(z) + 2.0; //parses/converts string of 1.1 to double value
         System.out.println(w);
 
-        //math class
     }
 }
