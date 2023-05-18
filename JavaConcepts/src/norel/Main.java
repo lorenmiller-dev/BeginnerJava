@@ -1,4 +1,4 @@
-package com.norel;
+package norel;
 
 public class Main {
     public static void main(String[] args) {

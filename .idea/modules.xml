@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BeginnerJava.iml" filepath="$PROJECT_DIR$/BeginnerJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/FizzBuzz/FizzBuzz.iml" filepath="$PROJECT_DIR$/FizzBuzz/FizzBuzz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaConcepts/JavaConcepts.iml" filepath="$PROJECT_DIR$/JavaConcepts/JavaConcepts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeetCode/LeetCode.iml" filepath="$PROJECT_DIR$/LeetCode/LeetCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/MortgageCalculator/MortgageCalculator.iml" filepath="$PROJECT_DIR$/MortgageCalculator/MortgageCalculator.iml" />
     </modules>
   </component>

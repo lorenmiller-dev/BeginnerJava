@@ -1,4 +1,4 @@
-package com.norel;
+package norel;
 
 import java.text.NumberFormat;
 
