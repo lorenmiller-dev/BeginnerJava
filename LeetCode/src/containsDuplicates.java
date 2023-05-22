@@ -2,7 +2,7 @@ import java.util.HashSet;
 
 public class containsDuplicates {
     public static void main(String[] args) {
-        int[] nums = {1, 0, 2, 5, 4, 2, 4, 5};
+        int[] nums = {1, 3, 2, 2, 2};
         System.out.println(ContainsDuplicates(nums));
         System.out.println(distinctElements(nums));
     }
@@ -14,14 +14,17 @@ public class containsDuplicates {
      * @return true if nums contains duplicates, false otherwise
      */
     public static boolean ContainsDuplicates(int[] nums){
-        HashSet<Integer> numbers = new HashSet<>();
+        // Create HashSet
+        HashSet<Integer> map = new HashSet<>();
 
-        //loop through array
+        // loop through array
         for (int i = 0; i < nums.length; i++){
-            if (numbers.contains(nums[i])) return true; //number in hash sett = i, return true
-            numbers.add(nums[i]);
+            // Check if nums[i] is in HashSet
+            if (map.contains(nums[i])) return true;
+            // if not add nums[i] to HashSet
+            map.add(nums[i]);
         }
-        return false;
+        return false; // return false if on duplicates exist
     }
 
     public static int distinctElements(int[] nums){

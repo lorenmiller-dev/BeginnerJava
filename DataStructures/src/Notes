@@ -1,0 +1,66 @@
+What is a data structure?
+    way of organizing data to be used effectively
+
+Why?
+    creating fast powerful algorithms, manage/organize data, and makes code cleaner and easier to read
+
+Abstract data type vs Data Structures
+    ADT: a data type, where only behavior is defined but not implementation.
+    ex.) Array, List, Map, Queue, Stack, Set, Table, Tree, and Vector
+
+    ADT     DS
+    List    Dynamic Array, Linked List
+    Queue   Linked List, Array, and Stack based Queues
+    Map     Tree Map, Hash map, Hash table
+
+Computational Complexity Analysis
+    how much [Time] and [Space] for algorithm to finish
+
+    Big-O Notation describes performance or complexity of a algorithm
+        O(1)        - constant
+        O(log(n))   - logarithmic
+        O(n)        - linear
+        O(n^2)      - quadratic
+        O(n log(n)) - linearithmic
+
+Static and Dynamic Arrays
+    Static Array: fixed length container, contains n elements. Index range from o to n-1. {1, 2, 3}; i = 0 to 2
+
+    Where are they used:
+        1. Storing and accessing data
+        2. Temporarily storing objects
+        3. Used by IO routines as buffers
+        4. Lookup tables and inverse lookup tables
+        5. Can return multiple values from function
+        6. Used in dynamic programming to cache answers to sub problems
+
+    Complexity
+                Static  Dynamic
+        Access  O(1)    O(1)
+        Search  O(n)    O(n)
+        Insert  N/A     O(n)
+        Append  N/A     O(1)
+        Delete  N/A     O(n)
+
+    Static Array
+        int[] a = {1, 2, 3, 4, 5}
+        index i =  0, 1, 2, 3, 4
+
+    Dynamic Array
+        Can grow and shrink in size
+                    A = {34, 4}
+        A.add(-7)       {34, 4, -7}
+        A.remove(4)     {34, -7, 34}
+
+        Implementing Dynamic Array
+            can use static array
+            add elements, keep tracking
+            if exceeding capacity, create new static array and copy original elements
+
+        ex.) empty array {_, _}, add 7 and -9 ->                {7, -9}
+             We want to add another number 3, double size of    {7, -9, 3, _}
+                new array and copy numbers
+             We can add 12 to array because there is a empty    {7, -9, 3, 12}
+                spot
+             We want to add 5 but no room                       {7, -9, 3, 12, 5, _, _, _}
+                double new array size and copy elements
