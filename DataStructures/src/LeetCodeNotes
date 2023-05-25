@@ -1,0 +1,12 @@
+
+Storing HashMap key value pairs in ArrayList
+
+    ArrayList<Map.entry<Integer, Integer>> list = new ArrayList<>(map.entrySet());
+
+    list.sort((a, b) -> b.getValue() - a.getValue());
+
+    What this code does is the ArrayList named list stores the key value pairs from the HashMap named map
+    Each element will be an instance of Map.Entry<Integer, Integer>
+
+    Using the sort() method sorts elements in list based on a custom comparator
+

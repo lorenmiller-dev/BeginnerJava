@@ -64,3 +64,41 @@ Static and Dynamic Arrays
                 spot
              We want to add 5 but no room                       {7, -9, 3, 12, 5, _, _, _}
                 double new array size and copy elements
+
+Singly and Doubly LinkedLists
+    What is a linked list?
+        sequential list of nodes that hold data which point to other nodes also containing data
+
+        last node always has null reference
+
+    Where is it used?
+        Lists, Queues and Stacks
+
+        creating circular lists
+
+
+    Terminology
+        Head: first node
+        Tail: last node
+
+        Pointer: reference to another node
+        Node: object containing data and pointer(s)
+
+    Singly vs Doubly
+        Singly Linked: only holder a reference to the next node
+
+Two Pointer Technique
+    Using two different pointers (variables or references) to solve a problem involving those indexes with the benefit
+    of saving time and space
+
+    Pointers: reference to object
+
+    When do we use it?
+        problems involving collections such as arrays or lists, analyze each element of the collection
+        compared to its other elements.
+
+    Two Pointers are efficient because we can process two elements per loop instead of one at the same time
+
+    Common Patters
+        1. starting from beginning and end until they both meet
+        2. one pointer moving at a slow pace and the other moving twice the speed

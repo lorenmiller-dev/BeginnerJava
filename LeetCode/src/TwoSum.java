@@ -35,6 +35,12 @@ public class TwoSum {
                                 result -> {2, 1}
      */
 
+    /** HashMap Solution
+     *
+     * @param nums int array
+     * @param target two elements from nums array that add up to target
+     * @return two elements add up and equal target
+     */
     public int[] twoSum(int[] nums, int target) {
         // create HashMap
         Map<Integer, Integer> map = new HashMap<>();
@@ -50,6 +56,37 @@ public class TwoSum {
             map.put(target - nums[i], i);
         }
         // No value adds to target return nums array
+        return nums;
+    }
+
+    /** Two-Pointer Solution
+     * Note: two pointer solution only works if array is sorted
+     *
+     * @param nums input array of numbers
+     * @param target value that two elements of nums array add up to
+     * @return two elements from nums array that equal target
+     */
+    public int[] twoPointer(int[] nums, int target) {
+        // initialize left and right pointer
+        int left = 0;
+        int right = nums.length - 1;
+
+        // while loop left < right
+        while (left < right){
+            // sum variable
+            int sum = nums[left] + nums[right];
+            // if two elements from nums array equals target
+            if (sum == target) {
+                // return two elements that add up to target
+                return new int[] {left, right};
+                // sum smaller than target need bigger number
+            } else if (sum < target) {
+                left++; // increase left pointer by 1
+            } else {
+                // need smaller number than target
+                right--; // decrease right pointer by 1
+            }
+        }
         return nums;
     }
 }
