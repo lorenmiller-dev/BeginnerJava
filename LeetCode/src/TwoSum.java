@@ -87,6 +87,7 @@ public class TwoSum {
                 right--; // decrease right pointer by 1
             }
         }
+        // no values that add up to target return nums
         return nums;
     }
 }
