@@ -49,7 +49,7 @@ public class TwoSum {
             // Get the index of the complement of the current number in the map
             Integer index = map.get(nums[i]);
             // If the complement exists in the map, return the indices of the pair
-            if (index != null) {
+            if (index != null) {    
                 return new int[] {i, index};
             }
             // Calculate the complement of the current number and put it in the map

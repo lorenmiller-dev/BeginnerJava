@@ -35,6 +35,6 @@ public class ValidPalindrome {
             left++; // increase left pointer to look at next character to the right
             right--; // decrease right pointer to look at next character to the left
         }
-        return true; // string s is palindrom return true
+        return true; // string s is palindrome return true
     }
 }

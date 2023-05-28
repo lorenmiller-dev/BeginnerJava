@@ -37,13 +37,13 @@ public class ProductOfArrayExceptSelf {
         int[] output = new int[n]; // output array
 
         leftProduct[0] = 1; // to the left of i = 0 is 1
-        rightProduct[n-1] = 1; // to the right of i = n-1 is 1
+        rightProduct[n - 1] = 1; // to the right of i = n-1 is 1
 
         // loop from left side of array nums, start at i = 1 because i = 0 is 1
         for (int i = 1; i < nums.length; i++) {
             // i = 1, nums[0] * leftProduct[0] = 1 * 1 = 1
             // i = 2, nums[1] * leftProduct[1] = 2 * 1 = 2
-            leftProduct[i] = nums[i-1] * leftProduct[i-1]; // multiply to the left of index
+            leftProduct[i] = nums[i - 1] * leftProduct[i - 1]; // multiply to the left of index
         }
 
         // loop from right side of array, start at n - 2 because (n-1) = 1
@@ -51,7 +51,7 @@ public class ProductOfArrayExceptSelf {
             // i = 4 - 2 -> i = 2; nums[3] * rightProduct[3] = 4 * 1 = 4
             // i = 3 - 2 -> i = 1; nums[2] * rightProduct[2] = 3 * 4 = 12
             // i = 2 - 2 -> i = 0; nums[1] * rightProduct[1] = 2 * 12 = 24
-            rightProduct[i] = nums[i+1] * rightProduct[i+1];
+            rightProduct[i] = nums[i + 1] * rightProduct[i + 1];
         }
 
         //
