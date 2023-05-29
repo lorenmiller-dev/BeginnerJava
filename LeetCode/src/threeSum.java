@@ -21,7 +21,7 @@ public class threeSum {
             // check if i = 0 || (i > 0 && there is no duplicate)
             // checking nums[i] != nums[i-1] ensure duplicate elements are skipped and
             // first occurrence numbers is considered, avoids duplicates in final result
-            if( i == 0 || (i > 0&& nums[i] != nums[i - 1])){
+            if( i == 0 || (i > 0 && nums[i] != nums[i - 1])){
                 // want to find a pair of numbers, set lower and upper boundary
                 int low = i + 1; // start one index to the right of starting index
                 int high = nums.length - 1; // right pointer starts at end of array
