@@ -1,4 +1,9 @@
 public class ContainerWithMostWater {
+    /**
+     *
+     * @param height input array of integers
+     * @return max area 
+     */
     public static int maxArea(int[] height) {
         // store highest max area
         int max_area = 0;
