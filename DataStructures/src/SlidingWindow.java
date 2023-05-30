@@ -60,6 +60,6 @@ public class SlidingWindow {
      * @return smallest sub array that is >= to target sum
      */
     public static int findSmallestSubarray(int[] array, int sum){
-
+        return 1;
     }
 }
