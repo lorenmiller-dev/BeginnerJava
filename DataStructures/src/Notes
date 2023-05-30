@@ -102,3 +102,32 @@ Two Pointer Technique
     Common Patters
         1. starting from beginning and end until they both meet
         2. one pointer moving at a slow pace and the other moving twice the speed
+
+Sliding Window Technique
+    What is it?
+
+    Benefits?
+
+    How to identify
+        well suited for iterable items: things we iterate over sequentially
+            {contiguous} sequence of elements(items that are grouped together)
+            strings, ints, linked lists
+
+        finding the minimum, maximum, longest, shortest, or is something is contained
+            maybe calculate/record something
+
+    Question Variants
+        Fixed Length
+            max sum subarray of size k
+
+        Dynamic Variant
+            smallest sum >= to some value s
+
+        Dynamic Variant w/ Auxiliary Data Structure
+            longest substring w/ no more than k distinct characters
+            string permutation
+
+    Similarities between problems?
+        Everything grouped within a sequence
+        Longest/Smallest/Contains
+        Max/Min

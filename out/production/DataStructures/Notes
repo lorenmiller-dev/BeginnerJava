@@ -51,3 +51,83 @@ Static and Dynamic Arrays
                     A = {34, 4}
         A.add(-7)       {34, 4, -7}
         A.remove(4)     {34, -7, 34}
+
+        Implementing Dynamic Array
+            can use static array
+            add elements, keep tracking
+            if exceeding capacity, create new static array and copy original elements
+
+        ex.) empty array {_, _}, add 7 and -9 ->                {7, -9}
+             We want to add another number 3, double size of    {7, -9, 3, _}
+                new array and copy numbers
+             We can add 12 to array because there is a empty    {7, -9, 3, 12}
+                spot
+             We want to add 5 but no room                       {7, -9, 3, 12, 5, _, _, _}
+                double new array size and copy elements
+
+Singly and Doubly LinkedLists
+    What is a linked list?
+        sequential list of nodes that hold data which point to other nodes also containing data
+
+        last node always has null reference
+
+    Where is it used?
+        Lists, Queues and Stacks
+
+        creating circular lists
+
+
+    Terminology
+        Head: first node
+        Tail: last node
+
+        Pointer: reference to another node
+        Node: object containing data and pointer(s)
+
+    Singly vs Doubly
+        Singly Linked: only holder a reference to the next node
+
+Two Pointer Technique
+    Using two different pointers (variables or references) to solve a problem involving those indexes with the benefit
+    of saving time and space
+
+    Pointers: reference to object
+
+    When do we use it?
+        problems involving collections such as arrays or lists, analyze each element of the collection
+        compared to its other elements.
+
+    Two Pointers are efficient because we can process two elements per loop instead of one at the same time
+
+    Common Patters
+        1. starting from beginning and end until they both meet
+        2. one pointer moving at a slow pace and the other moving twice the speed
+
+Sliding Window Technique
+    What is it?
+
+    Benefits?
+
+    How to identify
+        well suited for iterable items: things we iterate over sequentially
+            {contiguous} sequence of elements(items that are grouped together)
+            strings, ints, linked lists
+
+        finding the minimum, maximum, longest, shortest, or is something is contained
+            maybe calculate/record something
+
+    Question Variants
+        Fixed Length
+            max sum subarray of size k
+
+        Dynamic Variant
+            smallest sum >= to some value s
+
+        Dynamic Variant w/ Auxiliary Data Structure
+            longest substring w/ no more than k distinct characters
+            string permutation
+
+    Similarities between problems?
+        Everything grouped within a sequence
+        Longest/Smallest/Contains
+        Max/Min
