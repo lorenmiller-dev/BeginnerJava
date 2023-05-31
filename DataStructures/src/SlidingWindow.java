@@ -60,6 +60,36 @@ public class SlidingWindow {
      * @return smallest sub array that is >= to target sum
      */
     public static int findSmallestSubarray(int[] array, int sum){
-        return 1;
+        int minWindowSize = Integer.MAX_VALUE; // store output of smallest subarray
+        int start = 0; // track of start of window
+        int currentWindowSum = 0; // store current window sum
+
+        /*
+            Example array: {4, 2, 2, 7, 8, 1, 2, 8, 1, 0};
+            end(i) = 0  CWS = CWS + array[0] = 4,   CWS(4) >= Sum(8)? No
+            end    = 1  CWS = 4 + array[1] = 6,     CWS(6) >= Sum(8)? No
+            end    =
+
+
+         */
+
+        // loop through array
+        for (int end = 0; end < array.length; end++){
+            //
+            currentWindowSum += array[end];
+
+            // while current window sum >= sum
+            while (currentWindowSum >= sum){
+                // update smallest subarray size, end minus start + 1 since elements are indexed at 0
+                minWindowSize = Math.min(minWindowSize, end - start + 1);
+
+                // subtract element at index start from current window sum
+                currentWindowSum -= array[start];
+                // increment start
+                start++;
+            }
+        }
+        // return minimum window size
+        return minWindowSize;
     }
 }
