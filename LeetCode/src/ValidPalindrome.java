@@ -29,12 +29,13 @@ public class ValidPalindrome {
         while(left < right) {
             // if character from left and right not the same return false
             if (fixedString.charAt(left) != fixedString.charAt(right)){
+                // string is not palindrome
                 return false;
             }
 
             left++; // increase left pointer to look at next character to the right
             right--; // decrease right pointer to look at next character to the left
         }
-        return true; // string s is palindrome return true
+        return true; // string is a palindrome return true
     }
 }
